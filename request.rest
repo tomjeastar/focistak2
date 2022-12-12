@@ -1,0 +1,34 @@
+### read
+get http://localhost:3000/players
+
+### read by id
+get http://localhost:3000/players/hjffbjfflkjn
+
+### delete
+delete http://localhost:3000/players/hjffbjfflkjn
+
+### post
+post http://localhost:3000/players
+Content-Type: application/json
+
+{
+    "name": "ronaldo",
+    "qualification": 10,
+    "position": "hatved",
+    "club": "tapioszele se",
+    "age": 25,
+    "nationality": "magyar"
+}
+
+### put
+put http://localhost:3000/players/hjffbjfflkjn
+Content-Type: application/json
+
+{
+    "name": "messi",
+    "qualification": 9,
+    "position": "csatar",
+    "club": "fc barcelona",
+    "age": 35,
+    "nationality": "argentin"
+}
